@@ -2,14 +2,32 @@
 
 
 ##javascript调用App方法
-安卓的webview会在页面上设置一个全局的对象window.local_obj,js调用此方法即可。
+安卓的webview会在页面上设置一个全局的对象window.local_obj.callHandler, js调用此方法即可。
 ```js
-window.local_obj.dosomethins();
+window.local_obj.callHandler(args);
 ```
 苹果的webview会在页面设置JavascriptBridge，并返回一个bridge
 ```js
 connectWebViewJavascriptBridge(function (bridge) {
-    bridge.callHandler();
+    bridge.callHandler(args);
+});
+```
+
+##方法传参约定
+安卓和苹果统一约定只传两个参数, commond, options两个参数。
+```js
+//以打开贴子详情页为例
+
+//安卓
+window.local_obj.callHandler('open_post_detail', {
+    post_id : 100
+});
+
+//苹果
+connectWebViewJavascriptBridge(function (bridge) {
+    bridge.callHandler('open_post_detail', {
+        post_id : 100
+    });
 });
 ```
 
