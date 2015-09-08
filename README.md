@@ -48,7 +48,24 @@ connectWebViewJavascriptBridge(function (bridge) {
 ```
 
 ##社区接口约定
-- [返回/退出当前页](#方法传参约定)
+- [打开一个webview](#打开一个webview)     
+- [返回/退出当前页](#返回，退出当前webview)     
+
+###打开一个webview
+```js
+//安卓
+window.local_obj.callHandler('open_webview_page', {
+    url : 'http://abc.com/'
+});
+
+//苹果
+connectWebViewJavascriptBridge(function (bridge) {
+    bridge.callHandler('open_webview_page', {
+        url : 'http://abc.com/'
+    });
+});
+
+```
 
 
 ####返回，退出当前webview
