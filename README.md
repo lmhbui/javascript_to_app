@@ -50,6 +50,7 @@ connectWebViewJavascriptBridge(function (bridge) {
 ##社区接口约定
 - [打开一个webview](#打开)     
 - [返回/退出当前页](#返回)     
+- [设置头像](#设置头像)    
 
 ###打开
 新开一个webview
@@ -82,6 +83,19 @@ connectWebViewJavascriptBridge(function (bridge) {
 
 ```
 
+
+####设置头像
+启用设置头像组件。
+```js
+//安卓
+window.local_obj.callHandler('set_head_picture', {});
+
+//苹果
+connectWebViewJavascriptBridge(function (bridge) {
+    bridge.callHandler('set_head_picture', {});
+});
+
+```
 
 
 
