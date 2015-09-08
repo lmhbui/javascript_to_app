@@ -48,6 +48,9 @@ connectWebViewJavascriptBridge(function (bridge) {
 ```
 
 ##社区接口约定
+- [返回/退出当前页](#返回，退出当前webview)
+
+
 ####返回，退出当前webview
 ```js
 //安卓
