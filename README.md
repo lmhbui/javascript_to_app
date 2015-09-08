@@ -1,2 +1,3 @@
-# javascript_to_app
-javascript和app交互指南
+# javascript和app交互指南
+
+### 设定分享内容
