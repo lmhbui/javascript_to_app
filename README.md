@@ -46,3 +46,19 @@ connectWebViewJavascriptBridge(function (bridge) {
 <meta name="app_share_url" content="分享的链接" />
 <meta name="app_share_image" content="分享的图片" />
 ```
+
+##社区接口约定
+####返回，退出当前webview
+```js
+//安卓
+window.local_obj.callHandler('exit_current_page', {});
+
+//苹果
+bridge.callHandler('exit_current_page', {});
+```
+
+
+
+
+
+
