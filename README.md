@@ -48,10 +48,11 @@ connectWebViewJavascriptBridge(function (bridge) {
 ```
 
 ##社区接口约定
-- [打开一个webview](#打开一个webview)     
-- [返回/退出当前页](#返回退出当前webview)     
+- [打开一个webview](#打开)     
+- [返回/退出当前页](#返回)     
 
-###打开一个webview
+###打开
+新开一个webview
 ```js
 //安卓
 window.local_obj.callHandler('open_webview_page', {
@@ -68,7 +69,8 @@ connectWebViewJavascriptBridge(function (bridge) {
 ```
 
 
-####返回，退出当前webview
+####返回
+返回，关闭当前webview
 ```js
 //安卓
 window.local_obj.callHandler('exit_current_page', {});
