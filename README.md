@@ -48,7 +48,7 @@ connectWebViewJavascriptBridge(function (bridge) {
 ```
 
 ##社区接口约定
-- [返回/退出当前页](#返回，退出当前webview)
+- [返回/退出当前页](README.md#返回退出当前webview)
 
 
 ####返回，退出当前webview
