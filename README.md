@@ -54,7 +54,10 @@ connectWebViewJavascriptBridge(function (bridge) {
 window.local_obj.callHandler('exit_current_page', {});
 
 //苹果
-bridge.callHandler('exit_current_page', {});
+connectWebViewJavascriptBridge(function (bridge) {
+    bridge.callHandler('exit_current_page', {});
+});
+
 ```
 
 
