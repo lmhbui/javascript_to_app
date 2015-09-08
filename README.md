@@ -2,8 +2,6 @@
 
 
 ##javascript调用App方法
-
-####javascript调用安卓方法的实现
 安卓的webview会在页面上设置一个全局的对象window.local_obj,js调用此方法即可。
 ```js
 window.local_obj.dosomethins();
