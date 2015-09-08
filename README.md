@@ -49,7 +49,7 @@ connectWebViewJavascriptBridge(function (bridge) {
 
 ##社区接口约定
 - [打开一个webview](#打开一个webview)     
-- [返回/退出当前页](#返回，退出当前webview)     
+- [返回/退出当前页](#返回退出当前webview)     
 
 ###打开一个webview
 ```js
