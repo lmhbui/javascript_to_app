@@ -9,6 +9,7 @@
 - [打开圈子中写帖子页面](#打开圈子中写帖子页面) 
 - [打开私信页](#打开私信页) 
 - [分享接口](#设置分享信息接口) 
+- [调用示例](#调用示例) 
 
 #打开webview方法
 android打开webview方法
@@ -235,4 +236,38 @@ connectWebViewJavascriptBridge(function (bridge) {
         'sharedata': shareData
     });
 });
+```
+#调用示例
+```js
+打开webview方法    
+关闭webview方法   
+设置头像
+系统设置
+打开贴子详情页
+打开好货详情页
+打开圈子详情页
+打开圈子中写帖子页面
+打开私信页
+引入interactive.js用以下方法调用
+/*
+*bind-app为的接口名称
+*data-href为需要传的参数值，地址或者对应的id值
+*/
+<a href="javascript:;" bind-app="webview" data-href="url"></a>
+```
+```js
+分享用以下方式调用
+/*
+*先把信息埋到页面中如下
+*/
+<meta name="app_share_title" content="任性一周花费不愁，30000元旅游基金等你来拿！" />
+<meta name="app_share_description" content="原来，晒图就能免费玩~" />
+<meta name="app_share_url" content="http://sns.pro.lamahui.com/active/national?postid={{ Input::get('postid') }}" />
+<meta name="app_share_image" content="" />
+/*
+*点击按钮显示分享的触发事件
+*/
+  $('#sharebtn').on('click', function () {
+      cat.triggerShare();
+  });
 ```
