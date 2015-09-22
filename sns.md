@@ -250,16 +250,14 @@ connectWebViewJavascriptBridge(function (bridge) {
 引入interactive.js用以下方法调用
 ```js
 /*
-*bind-app为的接口名称
-*data-href为需要传的参数值，地址或者对应的id值
+*bind-app传入的值为的接口名称
+*data-href传入的值为需要传的参数值,比如：地址、圈子或帖子对应的id值
 */
 <a href="javascript:;" bind-app="webview" data-href="url"></a>
 ```
 分享用以下方式调用
 ```js
-/*
-*先把信息埋到页面中如下
-*/
+//先把信息埋到页面中如下
 <meta name="app_share_title" content="任性一周花费不愁，30000元旅游基金等你来拿！" />
 <meta name="app_share_description" content="原来，晒图就能免费玩~" />
 <meta name="app_share_url" content="http://sns.pro.lamahui.com/active/national?postid={{ Input::get('postid') }}" />
