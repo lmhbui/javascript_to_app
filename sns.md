@@ -38,12 +38,16 @@ connectWebViewJavascriptBridge(function (bridge) {
 
 android关闭webview方法
 ```js
-//exitCurrentPage为android的接口名称
+/**
+ *exitCurrentPage为android的接口名称
+*/
 window.local_obj.exitCurrentPage();
 ```
 ios关闭webview方法
 ```js
-//oexitCurrentPage为ios的接口名称
+/**
+ *oexitCurrentPage为ios的接口名称
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('exitCurrentPage', {});
 });
@@ -59,7 +63,9 @@ window.local_obj.startPage('setheadpicture', '', '');
 ```
 ios设置头像
 ```js
-//setheadpicture为ios的接口名称
+/**
+ *setheadpicture为ios的接口名称
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('setheadpicture', {});
 });
