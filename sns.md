@@ -16,8 +16,8 @@ android打开webview方法
 /**
 *startPage为android的接口名称
 *'webview'第一个参数为startPage内需要调用的打开webview方法
-*@param url 即要打开的页面地址
-*@param ''  第三个参数传空即可
+* url 即要打开的页面地址
+* ''  第三个参数传空即可
 */
 window.local_obj.startPage('webview', url, '');
 ```
@@ -26,7 +26,7 @@ ios打开webview方法
 /**
  *openMessageChatView为ios的接口名称
  *'url'参数名
- *@param params 参数值即要打开的页面地址
+ * params 参数值即要打开的页面地址
 */
 connectWebViewJavascriptBridge(function (bridge) {
   bridge.callHandler('openwebview', {
@@ -57,7 +57,7 @@ android设置头像
 ```js
 /**
  *setheadpicture为android的接口名称
- *@param params 参数传空即可
+ * params 参数传空即可
 */
 window.local_obj.startPage('setheadpicture', '', '');
 ```
@@ -75,7 +75,7 @@ android系统设置
 ```js
 /**
  *systemsetting为android的接口名称
- *@param params 参数传空即可
+ * params 参数传空即可
 */
 window.local_obj.startPage('systemsetting', '', '');
 ```
@@ -99,7 +99,7 @@ ios打开贴子详情页
 ```js
 /**
  *notedetail为ios的接口名称
- *@param postid参数传帖子id
+ * postid参数传帖子id
 */
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('notedetail', {
@@ -112,7 +112,7 @@ android打开好货详情页
 ```js
 /**
  *goodsdetail为android的接口名称
- *@param goodid参数传好货id
+ * goodid参数传好货id
 */
 window.local_obj.startPage('goodsdetail',goodid, '');
 ```
@@ -196,11 +196,11 @@ android设置分享信息
 ```js
 /**
 *shareContent分享接口
-*@param share_title  分享的标题
-*@param share_content  分享的的内容
-*@param imgUrl    图片url
-*@param share_url  目标url
-*@param isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
+* share_title  分享的标题
+* share_content  分享的的内容
+* imgUrl    图片url
+* share_url  目标url
+* isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
 */
 window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, "false");
 ```
@@ -210,11 +210,11 @@ android触发分享接口
 ```js
 /**
 *shareContent分享接口
-*@param share_title  分享的标题
-*@param share_content  分享的的内容
-*@param imgUrl    图片url
-*@param share_url  目标url
-*@param isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
+* share_title  分享的标题
+* share_content  分享的的内容
+* imgUrl    图片url
+* share_url  目标url
+* isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
 */
 window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, "true");
 ```
