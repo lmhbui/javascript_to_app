@@ -13,6 +13,10 @@
 #打开webview方法
 android打开webview方法
 ```js
+/**
+ * abc
+ */
+
 //startPage为android的接口名称
 //'webview'第一个参数为startPage内需要调用的打开webview方法
 //@param params 第二个参数即要打开的页面地址
