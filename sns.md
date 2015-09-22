@@ -255,8 +255,8 @@ connectWebViewJavascriptBridge(function (bridge) {
 */
 <a href="javascript:;" bind-app="webview" data-href="url"></a>
 ```
-```js
 分享用以下方式调用
+```js
 /*
 *先把信息埋到页面中如下
 */
