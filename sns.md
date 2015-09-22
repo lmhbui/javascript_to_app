@@ -238,17 +238,17 @@ connectWebViewJavascriptBridge(function (bridge) {
 });
 ```
 #调用示例
-```js
-打开webview方法    
-关闭webview方法   
-设置头像
-系统设置
-打开贴子详情页
-打开好货详情页
-打开圈子详情页
-打开圈子中写帖子页面
-打开私信页
+打开webview方法 ,  
+关闭webview方法 , 
+设置头像,
+系统设置,
+打开贴子详情页,
+打开好货详情页,
+打开圈子详情页,
+打开圈子中写帖子页面,
+打开私信页,
 引入interactive.js用以下方法调用
+```js
 /*
 *bind-app为的接口名称
 *data-href为需要传的参数值，地址或者对应的id值
