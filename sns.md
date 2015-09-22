@@ -7,27 +7,27 @@
 - [打开好货详情页](#打开好货详情页) 
 - [打开圈子详情页](#打开圈子详情页) 
 - [打开圈子中写帖子页面](#打开圈子中写帖子页面) 
-- [打开对话页](#打开对话页) 
+- [打开私信页](#打开私信页) 
 - [分享接口](#分享接口) 
 
 #打开webview方法
 android打开webview方法
 ```js
 /**
- * abc
- */
-
-//startPage为android的接口名称
-//'webview'第一个参数为startPage内需要调用的打开webview方法
-//@param params 第二个参数即要打开的页面地址
-//@param “”  第三个参数传空即可
-window.local_obj.startPage('webview', params, '');
+*startPage为android的接口名称
+*'webview'第一个参数为startPage内需要调用的打开webview方法
+*@param url 即要打开的页面地址
+*@param ''  第三个参数传空即可
+*/
+window.local_obj.startPage('webview', url, '');
 ```
 ios打开webview方法
 ```js
-//openMessageChatView为ios的接口名称
-//'url'参数名
-//@param params 参数值即要打开的页面地址
+/**
+ *openMessageChatView为ios的接口名称
+ *'url'参数名
+ *@param params 参数值即要打开的页面地址
+*/
 connectWebViewJavascriptBridge(function (bridge) {
   bridge.callHandler('openwebview', {
     'url': params
@@ -51,8 +51,10 @@ connectWebViewJavascriptBridge(function (bridge) {
 #设置头像
 android设置头像
 ```js
-//setheadpicture为android的接口名称
-//参数传空即可
+/**
+ *setheadpicture为android的接口名称
+ *@param params 参数传空即可
+*/
 window.local_obj.startPage('setheadpicture', '', '');
 ```
 ios设置头像
@@ -65,8 +67,10 @@ connectWebViewJavascriptBridge(function (bridge) {
 #系统设置
 android系统设置
 ```js
-//systemsetting为android的接口名称
-//参数传空即可
+/**
+ *systemsetting为android的接口名称
+ *@param params 参数传空即可
+*/
 window.local_obj.startPage('systemsetting', '', '');
 ```
 ios系统设置
@@ -79,14 +83,18 @@ connectWebViewJavascriptBridge(function (bridge) {
 #打开贴子详情页
 android打开贴子详情页
 ```js
-//notedetail为android的接口名称
-//params参数传帖子id
-window.local_obj.startPage('notedetail', params, '');
+/**
+ *notedetail为android的接口名称
+ *@param postid参数传帖子id
+*/
+window.local_obj.startPage('notedetail', postid, '');
 ```
 ios打开贴子详情页
 ```js
-//notedetail为ios的接口名称
-//postid参数，params的值传帖子id
+/**
+ *notedetail为ios的接口名称
+ *@param postid参数传帖子id
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('notedetail', {
          'postid': params
@@ -96,86 +104,121 @@ connectWebViewJavascriptBridge(function (bridge) {
 #打开好货详情页
 android打开好货详情页
 ```js
-//goodsdetail为android的接口名称
-//params参数传好货id
-window.local_obj.startPage('goodsdetail', params, '');
+/**
+ *goodsdetail为android的接口名称
+ *@param goodid参数传好货id
+*/
+window.local_obj.startPage('goodsdetail',goodid, '');
 ```
 ios打开好货详情页
 ```js
-//fondgoodsdetail为ios的接口名称
-//postid参数名，params的值传好货id
+/**
+ *fondgoodsdetail为ios的接口名称
+ *postid参数的值传好货id
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('fondgoodsdetail', {
-        'postid': params
+        'postid': postid
     });
 });
 ```
 #打开圈子详情页
 android打开圈子详情页
 ```js
-//circledetail为android的接口名称
-//params参数传圈子id
-window.local_obj.startPage('circledetail', params, '');
+/**
+ *circledetail为android的接口名称
+ *circleid参数传圈子id
+*/
+window.local_obj.startPage('circledetail', circleid, '');
 ```
 ios打开圈子详情页
 ```js
-//circleDetail为ios的接口名称
-//postid参数名，params的值传圈子id
+/**
+ *circleDetail为ios的接口名称
+ *circleid参数传圈子id
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('circleDetail', {
-        'postid': params
+        'postid': circleid
     });
 });
 ```
 #打开圈子中写帖子页面
 android打开圈子中写帖子页面
 ```js
-//writenote为android的接口名称
-//params参数传圈子id
- window.local_obj.startPage('writenote', params, '');
+/**
+ *writenote为android的接口名称
+ *circleid参数传圈子id
+*/
+ window.local_obj.startPage('writenote', circleid, '');
 ```
 ios打开圈子中写帖子页面
 ```js
-//sentNote为ios的接口名称
-//circleid参数名，params的值传圈子id
+/**
+ *sentNote为ios的接口名称
+ *circleid参数名的值传圈子id
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('sentNote', {
-        'circleid': params
+        'circleid': circleid
     });
 });
 ```
 #打开对话页
 android打开对话页
 ```js
-//sendpersonalmessage为android的接口名称
-//params参数传用户id
- window.local_obj.startPage('sendpersonalmessage', params, '');
+/**
+ *sendpersonalmessage为android的接口名称
+ *userid参数传用户id
+*/
+ window.local_obj.startPage('sendpersonalmessage', userid, '');
 ```
-ios打开对话页
+ios打开私信页
 ```js
-//openMessageChatView为ios的接口名称
-//userid参数名，params的值传用户id
+/**
+ *openMessageChatView为ios的接口名称
+ *userid参数传用户id
+*/
 connectWebViewJavascriptBridge(function (bridge) {
     bridge.callHandler('openMessageChatView', {
-        'userid': params
+        'userid': userid
     });
 });
 ```
-#分享接口
+#设置分享信息接口
+设置分享信息
 android分享接口
 ```js
-//shareContent分享接口
-//@param share_title  分享的标题
-//@param share_content  分享的的内容
-//@param imgUrl    图片url
-//@param share_url  目标url
-//@param isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
-window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, isShow);
+/**
+*shareContent分享接口
+*@param share_title  分享的标题
+*@param share_content  分享的的内容
+*@param imgUrl    图片url
+*@param share_url  目标url
+*@param isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
+*/
+window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, "false");
+```
+ios分享接口---无
+#触发分享接口
+android分享接口
+```js
+/**
+*shareContent分享接口
+*@param share_title  分享的标题
+*@param share_content  分享的的内容
+*@param imgUrl    图片url
+*@param share_url  目标url
+*@param isShow 是否显示分享弹窗, "true" 为显示， "false" 为不显示
+*/
+window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, "true");
 ```
 ios分享接口
 ```js
-//share_native为ios的接口名称
-//sharedata参数名，shareData的值传分享信息的对象信息
+/*
+*share_native为ios的接口名称
+*sharedata参数名，shareData的值传分享信息的对象信息
+*/
 shareData = {
     shareTitle: '下载辣妈汇APP，享新人好礼',
     shareTent: '辣妈正品1折起，更懂辣妈的特卖网站',
