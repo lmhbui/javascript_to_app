@@ -186,8 +186,7 @@ connectWebViewJavascriptBridge(function (bridge) {
 });
 ```
 #设置分享信息接口
-设置分享信息
-android分享接口
+android设置分享信息
 ```js
 /**
 *shareContent分享接口
@@ -199,9 +198,9 @@ android分享接口
 */
 window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, "false");
 ```
-ios分享接口---无
+ios设置分享信息---无
 #触发分享接口
-android分享接口
+android触发分享接口
 ```js
 /**
 *shareContent分享接口
@@ -213,7 +212,7 @@ android分享接口
 */
 window.local_obj.shareContent(share_title,share_content, imgUrl,share_url, "true");
 ```
-ios分享接口
+ios触发分享接口
 ```js
 /*
 *share_native为ios的接口名称
