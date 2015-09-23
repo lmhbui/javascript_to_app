@@ -2,9 +2,9 @@
 
 
 ##javascript调用App方法
-安卓的webview会在页面上设置一个全局的对象window.local_obj.callHandler, js调用此方法即可。
+安卓的webview会在页面上设置一个全局的对象window.local_obj, js调用此方法即可。
 ```js
-window.local_obj.callHandler(args);
+window.local_obj.somefunction(...);
 ```
 苹果的webview会在页面设置JavascriptBridge，并返回一个bridge
 ```js
