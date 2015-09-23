@@ -14,6 +14,7 @@ connectWebViewJavascriptBridge(function (bridge) {
 ```
 
 [社区JS与APP交互接口文档](sns.md)
+[社区Html绑定与JS交互接口文档](snsbind.md)
 
 
 
