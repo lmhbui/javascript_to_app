@@ -16,6 +16,10 @@
 - [建议反馈](#建议反馈) 
 - [修改昵称](#修改昵称) 
 - [修改密码](#修改密码) 
+- [标记已完成的产检](#标记已完成的产检) 
+- [取消已标记的产检](#取消已标记的产检) 
+- [标记完成一次疫苗](#标记完成一次疫苗) 
+- [取消已标记的疫苗](#取消已标记的疫苗) 
 
 
 
@@ -616,7 +620,7 @@
 //需要传的参数
 {
 "method":"for_vaccination"//方法名
-"params[tools_id]":"",//
+"params[tools_id]":"",//小工具id
 "params[type]":add,
 "params[care]":baby,
 "app_key":14327
@@ -626,9 +630,27 @@
 ```
 //需要传的参数
 "method': 'for_vaccination',
-"params[tools_id]": id,
+"params[tools_id]": id,//小工具id
 "params[type]": 'del',
 "params[care]":baby,
+"app_key": 14327
+```
+#标记完成一次疫苗
+```
+//需要传的参数
+{
+"method":"for_vaccination"//方法名
+"params[tools_id]":"",//
+"params[type]":add,
+"app_key":14327
+}
+```
+#取消已标记的疫苗
+//需要传的参数
+```
+"method': 'for_vaccination',//方法名
+"params[tools_id]": id,
+"params[type]": 'del',
 "app_key": 14327
 ```
 #指令类
