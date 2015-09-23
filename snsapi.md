@@ -611,5 +611,24 @@
 "params[new_pwd]":"新密码"//新密码
 }
 ```
-
+#标记已完成的产检
+```
+//需要传的参数
+{
+"method":"for_vaccination"//方法名
+"params[tools_id]":"",//
+"params[type]":add,
+"params[care]":baby,
+"app_key":14327
+}
+```
+#取消已标记的产检
+```
+//需要传的参数
+"method': 'for_vaccination',
+"params[tools_id]": id,
+"params[type]": 'del',
+"params[care]":baby,
+"app_key": 14327
+```
 #指令类
