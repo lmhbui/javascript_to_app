@@ -545,8 +545,8 @@
                 ],
                 "next_care": 0,
                 "date": "",
-                "is_overdue": 0,
-                "is_check": 0
+                "is_overdue": 0,//是否过期
+                "is_check": 0//是否已检查
             }
         ],
         "total": 13,//总条数
