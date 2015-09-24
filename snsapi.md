@@ -24,7 +24,7 @@
 
 
 
-#列表类
+#搜索
 # 搜全部贴子
 ```
 //需要传的参数：
@@ -130,7 +130,7 @@
     }
 }
 ```
-
+#列表页
 #圈子列表页
 ```
 //需要传的参数
@@ -159,6 +159,38 @@
                 "in_circle": 0,
                 "faction_members": []
             }     
+        ],
+        "has": 0//是否有下一页
+    }
+}
+```
+#我(他)的圈子列表页
+```
+//需要传的参数
+{
+  "method":"get_circle_list",//方法名
+  "app_key":"14327",
+  "params[person_id]":"用户ID" ,//用户ID
+  "params[page_no]":1,//第几页
+  "params[page_size]":10//每页多少条数据
+  "params[keywords]":""//关键词（可选）
+}
+//返回结果
+{
+    "code": "0",
+    "msg": "成功",
+    "data": {
+        "total": 2,
+        "circle_list": [
+            {
+                "circle_id": 190,
+                "circle_name": "宝宝风采",
+                "description": "赶紧把你家宝宝的照片晒出来吧！",
+                "check_url": "http://sns.pro.com/circle/channel?circle_id=190",
+                "circle_image": "a.jpg",
+                "in_circle": 1,
+                "faction_members": []
+            }           
         ],
         "has": 0//是否有下一页
     }
@@ -204,38 +236,7 @@
 }
 ```
 
-#我(他)的圈子列表页
-```
-//需要传的参数
-{
-  "method":"get_circle_list",//方法名
-  "app_key":"14327",
-  "params[person_id]":"用户ID" ,//用户ID
-  "params[page_no]":1,//第几页
-  "params[page_size]":10//每页多少条数据
-  "params[keywords]":""//关键词（可选）
-}
-//返回结果
-{
-    "code": "0",
-    "msg": "成功",
-    "data": {
-        "total": 2,
-        "circle_list": [
-            {
-                "circle_id": 190,
-                "circle_name": "宝宝风采",
-                "description": "赶紧把你家宝宝的照片晒出来吧！",
-                "check_url": "http://sns.pro.com/circle/channel?circle_id=190",
-                "circle_image": "a.jpg",
-                "in_circle": 1,
-                "faction_members": []
-            }           
-        ],
-        "has": 0//是否有下一页
-    }
-}
-```
+
 #我(他)关注的人及我（他）的辣粉页
 ```
 //需要传的参数
@@ -444,6 +445,8 @@
 }
 ```
 
+#发现
+
 #看懂B超单
 ```
 //需要传的参数
@@ -552,67 +555,6 @@
     }
 }
 ```
-#设置首页
-```
-//需要传的参数
-{
-"method":"get_user_info"//方法名
-"app_key":14327,  
-}
-//返回结果
-{
-    "code": "0",
-    "msg": "成功",
-    "data": {
-        "image_url": "1.jpg",
-        "nickname": "小小",
-        "city_name": "杭州市",
-        "user_status": "备孕中",
-        "baby_birthday": ""
-    }
-}
-```
-#建议反馈
-```
-//需要传的参数
-{
-  "method":"set_feedback_in"//方法名
-  "params[content]":"反馈的内容",//反馈的内容
-  "params[mobile]":"手机号码" //手机号码
- 
-}
-//返回结果
-{
-    "code": "0",
-    "msg": "成功",
-    "data": {}
-}
-```
-#修改昵称
-```
-//需要传的参数
-{
-  "method":"set_user_profile"//方法名
-  "app_key":14327,
-  "params[nickname]":"昵称"//输入的昵称
- 
-}
-//返回结果
-{
-    "code": "0",
-    "msg": "成功",
-    "data": {}
-}
-```
-#修改密码
-```
-//需要传的参数
-{
-  "method":"reset_user_pwd"//方法名
-  "params[old_pwd]":"旧密码"//旧密码
-  "params[new_pwd]":"新密码"//新密码
-}
-```
 #标记已完成的产检
 ```
 //需要传的参数
@@ -651,4 +593,72 @@
   "params[type]": 'del',
   "app_key": 14327
 ```
+
+#设置页
+
+#设置首页
+```
+//需要传的参数
+{
+"method":"get_user_info"//方法名
+"app_key":14327,  
+}
+//返回结果
+{
+    "code": "0",
+    "msg": "成功",
+    "data": {
+        "image_url": "1.jpg",
+        "nickname": "小小",
+        "city_name": "杭州市",
+        "user_status": "备孕中",
+        "baby_birthday": ""
+    }
+}
+```
+#修改昵称
+```
+//需要传的参数
+{
+  "method":"set_user_profile"//方法名
+  "app_key":14327,
+  "params[nickname]":"昵称"//输入的昵称
+ 
+}
+//返回结果
+{
+    "code": "0",
+    "msg": "成功",
+    "data": {}
+}
+```
+#修改密码
+```
+//需要传的参数
+{
+  "method":"reset_user_pwd"//方法名
+  "params[old_pwd]":"旧密码"//旧密码
+  "params[new_pwd]":"新密码"//新密码
+}
+```
+
+#建议反馈
+```
+//需要传的参数
+{
+  "method":"set_feedback_in"//方法名
+  "params[content]":"反馈的内容",//反馈的内容
+  "params[mobile]":"手机号码" //手机号码
+ 
+}
+//返回结果
+{
+    "code": "0",
+    "msg": "成功",
+    "data": {}
+}
+```
+
+
+
 #指令类
