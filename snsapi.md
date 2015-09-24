@@ -49,7 +49,7 @@
             "create_at": "\u521a\u521a",
             "comment_list": 0,
             "nickname": "\u674e\u5c0f\u5c0f\u82cf",
-            "user_image": "http:\/\/img.test.lamahui.com\/\/static\/images\/2015\/09\/18\/dimage_2_40494.jpg",
+            "user_image": "a.jpg",
             "is_top": 0,
             "post_id": 110338,
             "is_essence": 0,
@@ -84,15 +84,15 @@
         "list": [
             {
                 "id": 100041343,
-                "avatar_image_url": "http://img.test.lamahui.com//static/images/2015/09/18/dimage_3_804.jpg",
+                "avatar_image_url": "a.jpg",
                 "nickname": "海之言ωs952",
                 "baby_birthday_at": "备孕中",
                 "level": "",
-                "is_concern": 0
+                "is_concern": 0//是否关注（0：未关注，1：已关注）
             }   
         ],
-        "total": 2,
-        "has": 0
+        "total": 1,//总条数
+        "has": 0//是否有下一页
     }
 }
 
@@ -114,19 +114,19 @@
     "code": "0",
     "msg": "成功",
     "data": {
-        "total": 1,
+        "total": 1,//总条数
         "circle_list": [
             {
                 "circle_id": 190,
                 "circle_name": "宝宝风采",
                 "description": "赶紧把你家宝宝的照片晒出来吧！",
-                "check_url": "http://sns.pro.lamahui.com/circle/channel?circle_id=190",
-                "circle_image": "http://img.pro.lamahui.com/static/images/2015/09/17/5496ebab048976565449d74db4c351579033.jpg",
-                "in_circle": 0,
+                "check_url": "http://sns.pro.com/circle/channel?circle_id=190",
+                "circle_image": "a.jpg",
+                "in_circle": 0,//是否加入圈子（1：已加圈 0：未加圈）
                 "faction_members": []
             }
         ],
-        "has": 0
+        "has": 0//是否有下一页
     }
 }
 ```
@@ -148,19 +148,19 @@
     "code": "0",
     "msg": "成功",
     "data": {
-        "total": 7,
+        "total": 7,//总条数
         "circle_list": [
             {
                 "circle_id": 190,
                 "circle_name": "宝宝风采",
                 "description": "赶紧把你家宝宝的照片晒出来吧！",
-                "check_url": "http://sns.pro.lamahui.com/circle/channel?circle_id=190",
-                "circle_image": "http://img.pro.lamahui.com/static/images/2015/09/17/5496ebab048976565449d74db4c351579033.jpg",
+                "check_url": "http://sns.pro.com/circle/channel?circle_id=190",
+                "circle_image": "a.jpg",
                 "in_circle": 0,
                 "faction_members": []
             }     
         ],
-        "has": 0
+        "has": 0//是否有下一页
     }
 }
 ```
@@ -180,26 +180,26 @@
     "msg": "成功",
     "data": {
         "user_infor": {
-            "avatar_image_url": "http://img09.lamahui.com/static/images/2015/09/17/72dd1f4698a7560d215cfcb97f8023230C92F0CFFE7314BB05FD69753D88427D.jpg?imageView2/1/w/100/h/100/q/90/interlace/1",
-            "backgroud_image_url": "http://img09.lamahui.com//kindeditor/image/2015/08/13/a3677091d1865d2e941ed583b41486fa5939.jpg",
+            "avatar_image_url": "a.jpg", //头像图片地址
+            "backgroud_image_url": "a.jpg",//个人中心背景图
             "province_name": "杭州市",
             "nickname": "哈哈",
             "baby_birthday_at": "备孕中",
             "follow_id": "224",
             "level": "LV.1",
-            "user_index_url": "http://sns.pro.lamahui.com/user/index?person_id=224&title=他的个人中心&user_id=0"
+            "user_index_url": "http://sns.pro.com/user/index?person_id=224&title=他的个人中心&user_id=0"
         },
-        "banner_img": "http://img09.lamahui.com//kindeditor/image/2015/08/13/a3677091d1865d2e941ed583b41486fa5939.jpg",
+        "banner_img": "a.jpg",
         "interaction_num": {
-            "circle": 0,
-            "focus": 0,
-            "fans": 0,
-            "collection": 0
+            "circle": 0,//圈子
+            "focus": 0,//关注
+            "fans": 0,//辣粉
+            "collection": 0//收藏
         },
-        "create_post": 0,
-        "reply_post": 0,
+        "create_post": 0,//发表的帖子
+        "reply_post": 0,//回复的帖子
         "fans_been": "",
-        "is_own": true
+        "is_own": true//是否是自己的个人中心页 （false:他人的个人中心）
     }
 }
 ```
@@ -226,17 +226,17 @@
                 "circle_id": 190,
                 "circle_name": "宝宝风采",
                 "description": "赶紧把你家宝宝的照片晒出来吧！",
-                "check_url": "http://sns.pro.lamahui.com/circle/channel?circle_id=190",
-                "circle_image": "http://img.pro.lamahui.com/static/images/2015/09/17/5496ebab048976565449d74db4c351579033.jpg",
+                "check_url": "http://sns.pro.com/circle/channel?circle_id=190",
+                "circle_image": "a.jpg",
                 "in_circle": 1,
                 "faction_members": []
             }           
         ],
-        "has": 0
+        "has": 0//是否有下一页
     }
 }
 ```
-#我(他)关注的圈子及我（他）的辣粉页
+#我(他)关注的人及我（他）的辣粉页
 ```
 //需要传的参数
 {
@@ -259,7 +259,7 @@
                 "baby_infor": "女宝4岁11月",
                 "is_concern": 1,
                 "nickname": "馨妈爱宝宝",
-                "user_image": "http://imgpro.lamahui.com//static/images/2015/09/18/dimage_1_28.jpg?imageView2/1/w/100/h/100/q/90/interlace/1",
+                "user_image": "a.jpg",
                 "user_level_id": "LV.1",
                 "user_id": 100034970
             }
@@ -272,52 +272,50 @@
 ```
 //需要传的参数
 {
-
-"method":"get_post_list",//方法名
-"params[circle_id]":"圈子id",//圈子id
-"params[type_id]":0,
-"params[page_no]":1,//第几页
-"params[page_size]":10,//每页多少条数据
-"params[keywords]":" ",//关键词（可选）
-"params[tag_id]":" ",//标题（可选）
-"params[sponsor_id]":"发帖者ID",//发帖者ID
-"params[participator_id]":"参与者id",//参与者id
-"params[post_ids]":"贴子ids",//贴子ids
-"params[collector_id]":"收藏者id"//收藏者id
-  
+  "method":"get_post_list",//方法名
+  "params[circle_id]":"圈子id",//圈子id
+  "params[type_id]":0,
+  "params[page_no]":1,//第几页
+  "params[page_size]":10,//每页多少条数据
+  "params[keywords]":" ",//关键词（可选）
+  "params[tag_id]":" ",//标题（可选）
+  "params[sponsor_id]":"发帖者ID",//发帖者ID
+  "params[participator_id]":"参与者id",//参与者id
+  "params[post_ids]":"贴子ids",//贴子ids
+  "params[collector_id]":"收藏者id"//收藏者id
 }
 //返回结果
 {
     "code": "0",
     "msg": "成功",
     "data": {
-        "has": 0,
-        "total": 1,
+        "has": 0,//是否有下一页
+        "total": 1,//总条数
         "list": [
             {
                 "area": "杭州",
                 "post_id": 99066,
-                "is_best": 1,
+                "is_best": 1,//是否是精选帖子
                 "post_title": "有哪些让你相见恨晚的化妆品和护肤品？",
-                "post_content": "准备换一批化妆品求重点推荐眼线笔/液睫毛膏腮红有其他小OL必备的利器和窍门也欢迎推荐最好是性价比高价格不离谱的",
+                "post_content": "准备换一批化妆品求重点推荐眼线笔",
                 "support_count": 129,
                 "reply_count": 71,
-                "is_support": 0,
+                "is_support": 0,//是否对帖子点过赞
                 "user_profile": {
-                    "avatar_image_url": "http://imgpro.lamahui.com//static/images/2015/09/18/dimage_2_27198.jpg?imageView2/1/w/100/h/100/q/90/interlace/1",
-                    "backgroud_image_url": "http://img09.lamahui.com//kindeditor/image/2015/08/13/a3677091d1865d2e941ed583b41486fa5939.jpg",
+                    "avatar_image_url": "a.jpg",
+                    "backgroud_image_url": "a.jpg",
                     "province_name": "张掖市",
                     "nickname": "以命爱你们",
                     "baby_birthday_at": "女宝1岁15天",
                     "follow_id": 100223970,
                     "level": "LV.1",
-                    "user_index_url": "http://sns.pro.lamahui.com/user/index?person_id=100223970&title=他的个人中心&user_id=224"
+                    "user_index_url":"http://sns.pro.com/user/index?person_id=100223970&title=他的个人中心&user_id=224"
                 },
-                "post_type": 1,
-                "share_url": "http://sns.pro.lamahui.com/post/share?post_id=99066&device_id=",
+                "post_type": 1,//是否是帖子（2:是好货）
+                "share_url": "http://sns.pro.com/post/share?post_id=99066&device_id=",
                 "share_title": "有哪些让你相见恨晚的化妆品和护肤品？",
                 "share_content": "准备换一批化妆品求重点推荐眼线笔/液睫毛…",
-                "share_image": "http://img.lamahui.com/app/logo.png",
+                "share_image": "a.png",
                 "is_concern": 0,
                 "image_urls": [],
                 "image_big_urls": [],
@@ -332,17 +330,17 @@
 //需要传的参数
 {
 
-"method":"get_post_list",//方法名
-"params[circle_id]":"圈子id",//圈子id
-"params[type_id]":0,
-"params[page_no]":1,//第几页
-"params[page_size]":10,//每页多少条数据
-"params[keywords]":" ",//关键词（可选）
-"params[tag_id]":" ",//标题（可选）
-"params[sponsor_id]":"发帖者ID",//发帖者ID
-"params[participator_id]":"参与者id",//参与者id
-"params[post_ids]":"贴子ids",//贴子ids
-"params[collector_id]":"收藏者id"//收藏者id
+  "method":"get_post_list",//方法名
+  "params[circle_id]":"圈子id",//圈子id
+  "params[type_id]":0,
+  "params[page_no]":1,//第几页
+  "params[page_size]":10,//每页多少条数据
+  "params[keywords]":" ",//关键词（可选）
+  "params[tag_id]":" ",//标题（可选）
+  "params[sponsor_id]":"发帖者ID",//发帖者ID
+  "params[participator_id]":"参与者id",//参与者id
+  "params[post_ids]":"贴子ids",//贴子ids
+  "params[collector_id]":"收藏者id"//收藏者id
   
 }
 //返回结果
@@ -350,33 +348,33 @@
     "code": "0",
     "msg": "成功",
     "data": {
-        "has": 0,
-        "total": 1,
+        "has": 0,//是否有下一页
+        "total": 1,//总条数
         "list": [
             {
                 "area": "杭州市",
                 "post_id": 111268,
-                "is_best": 0,
+                "is_best": 0,//是否是精选帖子
                 "post_title": "关于宝宝的健康问题",
                 "post_content": "宝贝的东西一定要用好的有质量的不要贪图小便宜",
                 "support_count": 0,
                 "reply_count": 0,
                 "is_support": 0,
                 "user_profile": {
-                    "avatar_image_url": "http://img09.lamahui.com/static/images/2015/09/17/72dd1f4698a7560d215cfcb97f8023230C92F0CFFE7314BB05FD69753D88427D.jpg?imageView2/1/w/100/h/100/q/90/interlace/1",
-                    "backgroud_image_url": "http://img09.lamahui.com//kindeditor/image/2015/08/13/a3677091d1865d2e941ed583b41486fa5939.jpg",
+                    "avatar_image_url": "a.jpg",
+                    "backgroud_image_url": "a.jpg",
                     "province_name": "杭州市",
-                    "nickname": "小昭",
+                    "nickname": "小小",
                     "baby_birthday_at": "备孕中",
                     "follow_id": 224,
                     "level": "LV.1",
-                    "user_index_url": "http://sns.pro.lamahui.com/user/index?person_id=224&title=我的圈&user_id=224"
+                    "user_index_url": "http://sns.pro.com/user/index?person_id=224&title=我的圈&user_id=224"
                 },
-                "post_type": 1,
-                "share_url": "http://sns.pro.lamahui.com/post/share?post_id=111268&device_id=",
+                "post_type": 1,//是否是帖子（2:是好货）
+                "share_url": "http://sns.pro.com/post/share?post_id=111268&device_id=",
                 "share_title": "关于宝宝的健康问题",
                 "share_content": "宝贝的东西一定要用好的有质量的不要贪图小…",
-                "share_image": "http://img.lamahui.com/app/logo.png",
+                "share_image": "logo.png",
                 "is_concern": 0,
                 "image_urls": [],
                 "image_big_urls": [],
@@ -391,17 +389,17 @@
 //需要传的参数
 {
 
-"method":"get_post_list",//方法名
-"params[circle_id]":"圈子id",//圈子id
-"params[type_id]":0,
-"params[page_no]":1,//第几页
-"params[page_size]":10,//每页多少条数据
-"params[keywords]":" ",//关键词（可选）
-"params[tag_id]":" ",//标题（可选）
-"params[sponsor_id]":"发帖者ID",//发帖者ID
-"params[participator_id]":"参与者id",//参与者id
-"params[post_ids]":"贴子ids",//贴子ids
-"params[collector_id]":"收藏者id"//收藏者id
+  "method":"get_post_list",//方法名
+  "params[circle_id]":"圈子id",//圈子id
+  "params[type_id]":0,
+  "params[page_no]":1,//第几页
+  "params[page_size]":10,//每页多少条数据
+  "params[keywords]":" ",//关键词（可选）
+  "params[tag_id]":" ",//标题（可选）
+  "params[sponsor_id]":"发帖者ID",//发帖者ID
+  "params[participator_id]":"参与者id",//参与者id
+  "params[post_ids]":"贴子ids",//贴子ids
+  "params[collector_id]":"收藏者id"//收藏者id
   
 }
 //返回结果
@@ -409,33 +407,33 @@
     "code": "0",
     "msg": "成功",
     "data": {
-        "has": 0,
-        "total": 1,
+        "has": 0,//是否有下一页
+        "total": 1,//总条数
         "list": [
             {
                 "area": "杭州",
                 "post_id": 99066,
-                "is_best": 1,
+                "is_best": 1,//是否是精选帖子
                 "post_title": "有哪些让你相见恨晚的化妆品和护肤品？",
-                "post_content": "准备换一批化妆品求重点推荐眼线笔/液睫毛膏腮红有其他小OL必备的利器和窍门也欢迎推荐最好是性价比高价格不离谱的",
+                "post_content": "准备换一批化妆品求重点推荐眼线笔/液睫毛膏腮红",
                 "support_count": 131,
                 "reply_count": 73,
-                "is_support": 0,
+                "is_support": 0,//是否点赞
                 "user_profile": {
-                    "avatar_image_url": "http://imgpro.lamahui.com//static/images/2015/09/18/dimage_2_27198.jpg?imageView2/1/w/100/h/100/q/90/interlace/1",
-                    "backgroud_image_url": "http://img09.lamahui.com//kindeditor/image/2015/08/13/a3677091d1865d2e941ed583b41486fa5939.jpg",
+                    "avatar_image_url": "a.jpg",
+                    "backgroud_image_url": "1.jpg",
                     "province_name": "张掖市",
                     "nickname": "以命爱你们",
                     "baby_birthday_at": "女宝1岁15天",
                     "follow_id": 100223970,
                     "level": "LV.1",
-                    "user_index_url": "http://sns.pro.lamahui.com/user/index?person_id=100223970&title=他的个人中心&user_id=224"
+                    "user_index_url": "http://sns.pro.com/user/index?person_id=100223970&title=他的个人中心&user_id=224"
                 },
-                "post_type": 1,
-                "share_url": "http://sns.pro.lamahui.com/post/share?post_id=99066&device_id=",
+                "post_type": 1,//是否是帖子（2是好货）
+                "share_url": "http://sns.pro.com/post/share?post_id=99066&device_id=",
                 "share_title": "有哪些让你相见恨晚的化妆品和护肤品？",
                 "share_content": "准备换一批化妆品求重点推荐眼线笔/液睫毛…",
-                "share_image": "http://img.lamahui.com/app/logo.png",
+                "share_image": "logo.png",
                 "is_concern": 0,
                 "image_urls": [],
                 "image_big_urls": [],
@@ -450,10 +448,10 @@
 ```
 //需要传的参数
 {
-"method":"get_typeB"//方法名
-"app_key":14327,
-"params[page_no]":1//第几页
-"params[page_size]":100//每页多少条数据
+  "method":"get_typeB"//方法名
+  "app_key":14327,
+  "params[page_no]":1//第几页
+  "params[page_size]":100//每页多少条数据
 }
 //返回结果
 {
@@ -475,8 +473,8 @@
                 "id": 43
             }
         ],
-        "total": 20,
-        "has": 0
+        "total": 20,//总条数
+        "has": 0//是否有下一页
     }
 }
 ```
@@ -484,10 +482,10 @@
 ```
 //需要传的参数
 {
-"method":"get_vaccine_info"//方法名
-"app_key":14327,
-"params[page_no]":1//第几页
-"params[page_size]":100//每页多少条数据
+  "method":"get_vaccine_info"//方法名
+  "app_key":14327,
+  "params[page_no]":1//第几页
+  "params[page_size]":100//每页多少条数据
 }
 //返回结果
 {
@@ -514,8 +512,8 @@
                 }      
             ]
         },
-        "total": 36,
-        "has": 0,
+        "total": 36,//总条数
+        "has": 0,//是否有下一页
         "power": 0
     }
 }
@@ -524,10 +522,10 @@
 ```
 //需要传的参数
 {
-"method":"get_baby_care"//方法名
-"app_key":14327,
-"params[page_no]":1//第几页
-"params[page_size]":100//每页多少条数据
+  "method":"get_baby_care"//方法名
+  "app_key":14327,
+  "params[page_no]":1//第几页
+  "params[page_size]":100//每页多少条数据
 }
 //返回结果
 {
@@ -548,8 +546,8 @@
                 "is_check": 0
             }
         ],
-        "total": 13,
-        "has": 0,
+        "total": 13,//总条数
+        "has": 0,//是否有下一页
         "power": 0
     }
 }
@@ -566,8 +564,8 @@
     "code": "0",
     "msg": "成功",
     "data": {
-        "image_url": "http://img09.lamahui.com/static/images/2015/09/17/72dd1f4698a7560d215cfcb97f8023230C92F0CFFE7314BB05FD69753D88427D.jpg?imageView2/1/w/100/h/100/q/90/interlace/1",
-        "nickname": "小昭",
+        "image_url": "1.jpg",
+        "nickname": "小小",
         "city_name": "杭州市",
         "user_status": "备孕中",
         "baby_birthday": ""
@@ -578,9 +576,9 @@
 ```
 //需要传的参数
 {
-"method":"set_feedback_in"//方法名
-"params[content]":"反馈的内容",//反馈的内容
-"params[mobile]":"手机号码" //手机号码
+  "method":"set_feedback_in"//方法名
+  "params[content]":"反馈的内容",//反馈的内容
+  "params[mobile]":"手机号码" //手机号码
  
 }
 //返回结果
@@ -594,9 +592,9 @@
 ```
 //需要传的参数
 {
-"method":"set_user_profile"//方法名
-"app_key":14327,
-"params[nickname]":"昵称"//输入的昵称
+  "method":"set_user_profile"//方法名
+  "app_key":14327,
+  "params[nickname]":"昵称"//输入的昵称
  
 }
 //返回结果
@@ -610,47 +608,47 @@
 ```
 //需要传的参数
 {
-"method":"reset_user_pwd"//方法名
-"params[old_pwd]":"旧密码"//旧密码
-"params[new_pwd]":"新密码"//新密码
+  "method":"reset_user_pwd"//方法名
+  "params[old_pwd]":"旧密码"//旧密码
+  "params[new_pwd]":"新密码"//新密码
 }
 ```
 #标记已完成的产检
 ```
 //需要传的参数
 {
-"method":"for_vaccination"//方法名
-"params[tools_id]":"",//小工具id
-"params[type]":add,
-"params[care]":baby,
-"app_key":14327
+  "method":"for_vaccination"//方法名
+  "params[tools_id]":"",//小工具id
+  "params[type]":add,
+  "params[care]":baby,
+  "app_key":14327
 }
 ```
 #取消已标记的产检
 ```
 //需要传的参数
-"method': 'for_vaccination',
-"params[tools_id]": id,//小工具id
-"params[type]": 'del',
-"params[care]":baby,
-"app_key": 14327
+  "method': 'for_vaccination',
+  "params[tools_id]": id,//小工具id
+  "params[type]": 'del',
+  "params[care]":baby,
+  "app_key": 14327
 ```
 #标记完成一次疫苗
 ```
 //需要传的参数
 {
-"method":"for_vaccination"//方法名
-"params[tools_id]":"",//
-"params[type]":add,
-"app_key":14327
+  "method":"for_vaccination"//方法名
+  "params[tools_id]":"",//
+  "params[type]":add,
+  "app_key":14327
 }
 ```
 #取消已标记的疫苗
 //需要传的参数
 ```
-"method': 'for_vaccination',//方法名
-"params[tools_id]": id,
-"params[type]": 'del',
-"app_key": 14327
+  "method': 'for_vaccination',//方法名
+  "params[tools_id]": id,
+  "params[type]": 'del',
+  "app_key": 14327
 ```
 #指令类
