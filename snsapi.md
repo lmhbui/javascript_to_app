@@ -559,21 +559,23 @@
 ```
 //需要传的参数
 {
-  "method":"for_vaccination"//方法名
-  "params[tools_id]":"",//小工具id
-  "params[type]":add,
-  "params[care]":baby,
-  "app_key":14327
+    'method': 'for_vaccination' //方法名
+    'params[tools_id]': 'id',  //小工具id
+    'params[type]': 'add', //标记
+    'params[care]': 'baby', 
+    'app_key': 14327
 }
 ```
 #取消已标记的产检
 ```
 //需要传的参数
-  "method': 'for_vaccination',
-  "params[tools_id]": id,//小工具id
-  "params[type]": 'del',
-  "params[care]":baby,
-  "app_key": 14327
+{
+  'method': 'for_vaccination',
+  'params[tools_id]': 'id', //小工具id
+  'params[type]': 'del', //取消
+  'params[care]': baby', 
+  'app_key': 14327
+}
 ```
 #标记完成一次疫苗
 ```
